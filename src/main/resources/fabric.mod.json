@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "cakecommands",
+	"version": "${version}",
+	"name": "Cake Commands",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"cakes"
+	],
+	"contact": {
+		"homepage": "https://haiiro.moe/",
+		"sources": "https://haiiro.moe/"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cakecommands/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"moe.haiiro.cakecommands.CakeCommands"
+		],
+		"fabric-datagen": [
+			"moe.haiiro.cakecommands.CakeCommandsDataGenerator"
+		]
+	},
+	"mixins": [
+		"cakecommands.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21-",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
